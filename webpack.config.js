@@ -30,6 +30,12 @@ module.exports = {
           'babel-loader',
         ],
       },
+
+      {
+        test: /\.svg$/,
+        exclude: /node_modules/,
+        use: 'react-svg-loader',
+      },
     ],
   },
 
@@ -52,7 +58,7 @@ module.exports = {
   devServer: {
     contentBase: path.resolve(__dirname, 'public'),
     compress: true,
-    hot: false,
+    // hot: true,
     port: 4000,
   },
 }
