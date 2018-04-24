@@ -1,0 +1,7 @@
+{
+  "extends": "@atomix/eslint-config",
+  "env": {
+    "browser": false,
+    "node": true
+  }
+}

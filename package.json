@@ -1,0 +1,58 @@
+{
+  "name": "electron-app",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint .",
+    "postinstall": "electron-builder install-app-deps",
+    "dev:electron": "electron src/main",
+    "dev:webpack": "webpack-dev-server --mode development",
+    "dev": "run-p dev:electron dev:webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergeysova/electron-app.git"
+  },
+  "author": "Sergey Sova <mail@sergeysova.com> (https://sergeysova.com/)",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/sergeysova/electron-app/issues"
+  },
+  "homepage": "https://github.com/sergeysova/electron-app#readme",
+  "dependencies": {
+    "history": "^4.7.2",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "electron": "^1.8.4",
+    "react-router": "^4.2.0",
+    "react-router-redux": "^5.0.0-alpha.8",
+    "recompose": "^0.27.0",
+    "redux": "^4.0.0",
+    "redux-electron": "^0.3.2",
+    "redux-localstorage": "^0.4.1",
+    "redux-symbiote": "^2.0.3",
+    "redux-thunk": "^2.2.0",
+    "reselect": "^3.0.1",
+    "styled-jss": "^2.2.2"
+  },
+  "devDependencies": {
+    "@atomix/eslint-config": "^6.4.0",
+    "@atomix/eslint-config-react": "^6.4.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-react": "^6.24.1",
+    "electron-builder": "^20.10.0",
+    "electron-devtools-installer": "^2.2.3",
+    "eslint": "^4.19.1",
+    "html-webpack-plugin": "^3.2.0",
+    "npm-run-all": "^4.1.2",
+    "rimraf": "^2.6.2",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.15",
+    "webpack-dev-server": "^3.1.3"
+  }
+}
